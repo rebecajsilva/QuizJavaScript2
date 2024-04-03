@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'poppins', sans-serif;
+ 
+}
+
+    button {
+        cursor: pointer;
+    }
+    
+    body {
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        gap: 5px;
+        background: linear-gradient(90deg, rgb(28, 139, 230) 0%, rgb(39, 188, 214) 100%);
+        
+    }
+    body h2 {
+        color: rgb(12, 3, 3);
+       justify-content: center;
+        
+    }
+   
+    
+    .container {
+        width: 90%;
+        max-width: 800px;
+        background-color: rgb(247, 226, 226);
+        border-radius: 10px;
+        padding: 16px;
+    
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .questions-container {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 24px;
+    }
+    
+    .question {
+        font-size: 24px;
+        font-weight: bold;
+        text-align: center;
+    }
+    
+    .answers-container {
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 16px;
+    }
+    
+    .answer:disabled {
+        cursor: not-allowed;
+    }
+    
+    .next-question {
+        margin-top: 32px;
+    }
+    
+    .button {
+    width: 100%;
+    text-align: center;
+    padding: 5px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #008CCC;
+    color: white;
+    font-weight: bold;
+    
+        transition: filter 0.1s;
+    }
+    
+    .button:not(:disabled):hover {
+        filter: brightness(0.8);
+    }
+    
+    /* Finish game */
+    .final-message {
+        font-size: 20px;
+        text-align: center;
+    }
+    
+    .final-message span {
+        display: block;
+        margin-top: 8px;
+    }
+    
+    /* General styles */
+    .hide {
+        display: none;
+    }
+    
+    .correct {
+        background-color: #259714;
+    }
+    
+    .incorrect {
+        background-color: #a10101;
+        
+    }
+    #feedback{
+       
+        background-color: white;
+        border-radius: 10px;
+        display: flex ;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 10px;
+        margin-right: 70px;
+    }
+    
